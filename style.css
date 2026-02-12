@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #f7fbff;
+  color: #1b2a4a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 22px;
+  background-color: #eaf4ff;
+  border-bottom: 2px solid #cfe3ff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  background-color: #eaf4ff;
+  border-top: 2px solid #cfe3ff;
+}
+
+.splash {
+  text-align: center;
+  padding: 45px 20px;
+  background: linear-gradient(to bottom, #f2f8ff, #f7fbff);
+}
+
+h1 {
+  font-family: "Lora", serif;
+  color: #6ea8ff;
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+}
+
+.splash img {
+  border-radius: 18px;
+  border: 4px solid #cfe3ff;
+}
+
+.address {
+  font-weight: bold;
+  margin: 14px 0 8px 0;
+}
+
+.tagline {
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+h2 {
+  margin: 32px 22px 14px 22px;
+  color: #6ea8ff;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  color: #6ea8ff;
+}
+
+section {
+  padding: 0 22px 20px 22px;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px 22px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 22px;
+}
+
+a {
+  color: #6ea8ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #4d8dff;
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #d9ecff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(110, 168, 255, 0.12);
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  margin: 12px 0;
+}
+
+.one-col {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 14px;
+  border: 2px solid #cfe3ff;
+  font-family: inherit;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6ea8ff;
+}
+
+button {
+  background-color: #6ea8ff;
+  color: white;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #4d8dff;
+}
+
+input, textarea {
+  border: 2px solid #cfe3ff;
+  border-radius: 14px;
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
